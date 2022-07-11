@@ -3,7 +3,6 @@ import React from 'react'
 const Users=({loading,users})=>{
     return loading ? (   
           <div className='lds-dual-ring'>
-            
           </div>
         ) : 
         (
@@ -14,8 +13,8 @@ const Users=({loading,users})=>{
                         <div className="profile">
                           <img src={user.avatar} alt={user.avatar} className="avatar"></img>
                         <div>
-                          <h1 className="name">{user.first_name} {user.last_name}</h1>
-                          <p className="email">{user.email}</p>
+                          <h1>{user.first_name} {user.last_name}</h1>
+                          <p>{user.email}</p>
                         </div>
                         </div>
                       </div>
