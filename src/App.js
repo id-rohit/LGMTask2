@@ -34,7 +34,7 @@ class App extends Component {
           <img src={LGM} alt=""></img>
           <button onClick={this.updateState}>Get Users</button>
         </nav>
-        <div className="box2">
+        <div>
          <Users loading={this.state.loading} users={this.state.users_data}/>
         </div>
     </>
